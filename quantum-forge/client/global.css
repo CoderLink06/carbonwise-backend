@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Carbonwise - Eco-friendly brand colors
+   * HSL format for tailwind.config.ts compatibility
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 158 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 158 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 158 20% 15%;
+
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 152 15% 96%;
+    --secondary-foreground: 158 20% 15%;
+
+    --muted: 152 15% 96%;
+    --muted-foreground: 158 12% 46%;
+
+    --accent: 120 40% 95%;
+    --accent-foreground: 158 20% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 43 96% 56%;
+    --warning-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 152 25% 90%;
+    --input: 152 25% 90%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.75rem;
+
+    --eco-green: 142 76% 36%;
+    --eco-green-light: 142 60% 45%;
+    --eco-green-dark: 142 85% 25%;
+    --eco-mint: 155 70% 85%;
+    --eco-sage: 120 15% 55%;
+    --eco-forest: 158 60% 20%;
+
+    --gradient-eco: linear-gradient(
+      135deg,
+      hsl(142 76% 36%) 0%,
+      hsl(155 70% 45%) 100%
+    );
+    --gradient-carbon: linear-gradient(
+      135deg,
+      hsl(158 60% 20%) 0%,
+      hsl(142 85% 25%) 100%
+    );
+  }
+
+  .dark {
+    --background: 158 25% 8%;
+    --foreground: 152 15% 95%;
+
+    --card: 158 20% 12%;
+    --card-foreground: 152 15% 95%;
+
+    --popover: 158 20% 12%;
+    --popover-foreground: 152 15% 95%;
+
+    --primary: 142 76% 45%;
+    --primary-foreground: 158 25% 8%;
+
+    --secondary: 158 15% 18%;
+    --secondary-foreground: 152 15% 95%;
+
+    --muted: 158 15% 18%;
+    --muted-foreground: 152 12% 65%;
+
+    --accent: 158 15% 18%;
+    --accent-foreground: 152 15% 95%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 43 85% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --success: 142 76% 45%;
+    --success-foreground: 158 25% 8%;
+
+    --border: 158 15% 18%;
+    --input: 158 15% 18%;
+    --ring: 142 76% 45%;
+
+    --eco-green: 142 76% 45%;
+    --eco-green-light: 142 60% 55%;
+    --eco-green-dark: 142 85% 35%;
+    --eco-mint: 155 50% 75%;
+    --eco-sage: 120 15% 65%;
+    --eco-forest: 158 60% 30%;
+
+    --gradient-eco: linear-gradient(
+      135deg,
+      hsl(142 76% 45%) 0%,
+      hsl(155 70% 55%) 100%
+    );
+    --gradient-carbon: linear-gradient(
+      135deg,
+      hsl(158 60% 30%) 0%,
+      hsl(142 85% 35%) 100%
+    );
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
