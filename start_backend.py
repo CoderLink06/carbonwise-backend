@@ -7,7 +7,7 @@ Start script for the Flask API server
 import sys
 import os
 import subprocess
-import uvicorn
+
 
 def install_requirements():
     """Install Python requirements if needed"""
@@ -33,9 +33,9 @@ def start_server():
     print("   - GET  /api/dashboard      - Dashboard data")
     print("\n" + "="*50)
     
-    # Change to server directory and run the Flask app
     os.chdir('server')
-    os.system('python carbon_analyzer.py')
+    os.system("python carbon_analyzer.py")
+
 
 if __name__ == "__main__":
     print("🌱 Carbonwise - AI-Powered Carbon Footprint Analysis")
